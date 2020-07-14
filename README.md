@@ -12,6 +12,14 @@ swift package init --type library
 
 -  ユニットテストのソースは上記ディレクトリ下に置く
 -  テストの実行
+
 ```bash
 swift test
+```
+
+-  実行するテストファイルを絞る
+
+```bash
+swift test --filter TestCodeSampleTests.TestCodeSampleTests/tes
+tExample
 ```
