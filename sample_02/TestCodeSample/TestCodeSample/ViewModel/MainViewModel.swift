@@ -14,7 +14,7 @@ class MainViewModel {
     /// デリゲート
     weak var  delegate: MainViewModelDelegate?
 }
-// MARK: - Private Method
+// MARK: - Calc Method
 extension MainViewModel {
     /// 足算
     func add(_ x: Int, _ y: Int) -> Int {
