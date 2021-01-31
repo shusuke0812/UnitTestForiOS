@@ -1,6 +1,10 @@
-書籍「Swift実践入門 第17章ユニットテスト」を参考
+単体テスト、UIテストの勉強用
 ====
-　
+
+## リポジトリ説明
+- sample_01ディレクトリ・・・参考文献（１）
+- sample_02ディレクトリ・・・参考文献（２）
+
 ## Memo
 -  コアライブラリXCTestを使い、XCTestCaseを継承したクラス内にテストコードを記述する
 -  すなわち、テスト対象のモジュールはインポートする
@@ -26,3 +30,7 @@ swift test
 swift test --filter TestCodeSampleTests.TestCodeSampleTests/tes
 tExample
 ```
+
+## 参考文献
+1. 石川洋資、西山勇世、Swift実践入門、技術評論者、2020年4月28日 第3版 第1刷発行
+2. 
