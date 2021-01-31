@@ -16,4 +16,20 @@ class MainViewModel {
 }
 // MARK: - Private Method
 extension MainViewModel {
+    /// 足算
+    func add(_ x: Int, _ y: Int) -> Int {
+        return x + y
+    }
+    /// 引算
+    func subtract(_ x: Int, _ y: Int) -> Int {
+        return x - y
+    }
+    /// 掛算
+    func multiple(_ x: Int, _ y: Int) -> Int {
+        return x * y
+    }
+    /// 割算
+    func division(_ x: Int, _ y: Int) -> Int {
+        return x / y
+    }
 }
