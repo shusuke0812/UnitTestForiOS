@@ -45,7 +45,12 @@ extension MainViewModelTests {
     }
     /// 割算メソッドのテスト
     func testDivision() {
-        let result = mainViewModel.division(6, 2)
-        XCTAssertEqual(result, 3)
+        XCTContext.runActivity(named: "通常の割算") { _ in
+            XCTAssertEqual(mainViewModel.division(4, 2), 2)
+            XCTAssertEqual(mainViewModel.division(6, 2), 3)
+        }
+        XCTContext.runActivity(named: "0割") { _ in
+            XCTAssertNil(mainViewModel.division(4, 0))
+        }
     }
 }
