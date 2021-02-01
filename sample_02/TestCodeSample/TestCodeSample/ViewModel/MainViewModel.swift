@@ -25,8 +25,12 @@ extension MainViewModel {
         return x - y
     }
     /// 掛算
-    func multiple(_ x: Int, _ y: Int) -> Int {
-        return x * y
+    func multiple(_ x: Int, _ y: Int) -> Int? {
+        if y == 0 {
+            return nil
+        } else {
+            return x * y
+        }
     }
     /// 割算
     func division(_ x: Int, _ y: Int) -> Int {
