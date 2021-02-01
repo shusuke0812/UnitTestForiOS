@@ -28,10 +28,10 @@ class MainViewModelTests: XCTestCase {
 }
 // MARK: - Test Method
 extension MainViewModelTests {
-    /// 足算メソッドのテスト
+    /// 足算メソッドのテスト（テスト失敗時のエラーメッセージ付）
     func testAdd() {
         let result = mainViewModel.add(1, 2)
-        XCTAssertEqual(result, 3)
+        XCTAssertEqual(result, 3, "1 + 2 = 3 であること")
     }
     /// 引算メソッドのテスト
     func testSubtract() {
