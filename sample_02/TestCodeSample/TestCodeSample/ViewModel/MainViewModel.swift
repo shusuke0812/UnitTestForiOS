@@ -36,4 +36,12 @@ extension MainViewModel {
             return x / y
         }
     }
+    /// 正の数を判定するメソッド
+    func isPositive(_ x: Int) -> Bool {
+        if x >= 0 {
+            return true
+        } else {
+            return false
+        }
+    }
 }

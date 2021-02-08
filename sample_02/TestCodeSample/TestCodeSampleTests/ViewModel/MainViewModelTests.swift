@@ -53,4 +53,9 @@ extension MainViewModelTests {
             XCTAssertNil(mainViewModel.division(4, 0))
         }
     }
+    /// 正の数判定メソッドのテスト
+    func testIsPositive() {
+        XCTAssertTrue(mainViewModel.isPositive(0))
+        XCTAssertTrue(mainViewModel.isPositive(1))
+    }
 }
