@@ -13,6 +13,8 @@ protocol MainViewModelDelegate: AnyObject {
 class MainViewModel {
     /// デリゲート
     weak var  delegate: MainViewModelDelegate?
+    /// テスト用配列
+    let array = [10, 20, 12, 5, 87, 11, 92]
 }
 // MARK: - Calc Method
 extension MainViewModel {

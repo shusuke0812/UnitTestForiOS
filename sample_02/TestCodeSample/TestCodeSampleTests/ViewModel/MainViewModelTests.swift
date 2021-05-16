@@ -58,4 +58,8 @@ extension MainViewModelTests {
         XCTAssertTrue(mainViewModel.isPositive(0))
         XCTAssertTrue(mainViewModel.isPositive(1))
     }
+    /// 配列に`0`が含まれているかテスト
+    func testContainsZero() {
+        XCTAssertTrue(mainViewModel.array.contains(10))
+    }
 }
